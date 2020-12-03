@@ -7,4 +7,5 @@ Here is my contribution to the [Advent of Code 2020](https://adventofcode.com/20
 | Programmation language |  Day  |
 | ---------------------- | :---: |
 | JavaScript             |  01   |
-| JavaScript             |  01   |
+| JavaScript             |  02   |
+| JavaScript             |  03   |
