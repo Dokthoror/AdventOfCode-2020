@@ -7,19 +7,19 @@ const lines = inputData.split(/\r?\n/);
 
 let goodPassword = 0;
 
-lines.forEach(line => {
-    let data = line.split(': ');
+lines.forEach((line) => {
+    const data = line.split(': ');
 
-    let policyData = data[0];
-    let policyLetter = policyData.split(' ')[1];
-    let policyMinMax = policyData.split(' ')[0];
-    let policyMin = policyMinMax.split('-')[0];
-    let policyMax = policyMinMax.split('-')[1];
+    const policyData = data[0];
+    const policyLetter = policyData.split(' ')[1];
+    const policyMinMax = policyData.split(' ')[0];
+    const policyMin = policyMinMax.split('-')[0];
+    const policyMax = policyMinMax.split('-')[1];
 
     let countLetter = 0;
 
-    let password = data[1];
-    for (let letter of password) if (letter == policyLetter) countLetter++;
+    const password = data[1];
+    for (const letter of password) if (letter == policyLetter) countLetter++;
 
     if (countLetter >= policyMin && countLetter <= policyMax) goodPassword++;
 });

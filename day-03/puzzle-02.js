@@ -7,27 +7,26 @@ const lines = inputData.split(/\r?\n/);
 
 const numberOfColumns = 31;
 const toRight = [1, 3, 5, 7];
-const toDown = 1;
 
 
-toRight.forEach(right => {
+toRight.forEach((right) => {
     let numberOfTrees = 0;
     let column = 0;
     let lineNumber = 1;
 
-    lines.forEach(line => {
-        let squareData = line.split('');
-    
+    lines.forEach((line) => {
+        const squareData = line.split('');
+
         if (lineNumber != 1) {
             column += right;
-    
+
             if (!squareData[column]) {
                 column -= numberOfColumns;
             }
-    
+
             if (squareData[column] == '#') numberOfTrees++;
         }
-    
+
         lineNumber++;
     });
 
@@ -39,8 +38,8 @@ let numberOfTrees = 0;
 let lineNumber = 1;
 let column = 0;
 
-lines.forEach(line => {
-    let squareData = line.split('');
+lines.forEach((line) => {
+    const squareData = line.split('');
 
     if (lineNumber % 2 == 1 && lineNumber != 1) {
         column += 1;
@@ -53,7 +52,7 @@ lines.forEach(line => {
     }
 
     lineNumber++;
-})
+});
 
 // Need to multiply by hand the given values
 console.log(numberOfTrees);

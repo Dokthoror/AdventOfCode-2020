@@ -1,0 +1,27 @@
+{
+  "name": "adventofcode-2020",
+  "version": "1.0.0",
+  "description": "Here is my contribution for the Advent of Code 2020",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dokthoror/AdventOfCode-2020.git"
+  },
+  "keywords": [
+    "advent-of-code",
+    "advent-of-code-2020"
+  ],
+  "author": "Dokthoror",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Dokthoror/AdventOfCode-2020/issues"
+  },
+  "homepage": "https://github.com/Dokthoror/AdventOfCode-2020#readme",
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

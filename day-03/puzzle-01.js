@@ -9,14 +9,13 @@ let numberOfTrees = 0;
 
 const numberOfColumns = 31;
 const toRight = 3;
-const toDown = 1;
 
 
 let column = 0;
 let lineNumber = 1;
 
-lines.forEach(line => {
-    let squareData = line.split('');
+lines.forEach((line) => {
+    const squareData = line.split('');
 
     if (lineNumber != 1) {
         column += toRight;

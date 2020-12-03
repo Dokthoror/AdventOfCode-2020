@@ -5,12 +5,12 @@ const inputData = fs.readFileSync('input-file.txt', 'utf8');
 const lines = inputData.split(/\r?\n/);
 
 
-lines.forEach(fLine => {
-    lines.forEach(sLine => {
-        lines.forEach(tLine => {
+lines.forEach((fLine) => {
+    lines.forEach((sLine) => {
+        lines.forEach((tLine) => {
             if (Number(fLine) + Number(sLine) + Number(tLine) == 2020) {
-                console.log(`${fLine} * ${sLine} * ${Number(tLine)} = ${Number(fLine) * Number(sLine) * Number(tLine)}`);
+                console.log(Number(fLine) * Number(sLine) * Number(tLine));
             }
-        })
-    })
+        });
+    });
 });
