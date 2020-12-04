@@ -6,9 +6,9 @@ const lines = inputData.split(/\r?\n/);
 
 
 lines.forEach((fLine) => {
-    lines.forEach((sLine) => {
-        if (Number(fLine) + Number(sLine) == 2020) {
-            console.log(`${fLine} * ${sLine} = ${Number(fLine) * Number(sLine)}`);
-        }
-    });
+	lines.forEach((sLine) => {
+		if (Number(fLine) + Number(sLine) == 2020) {
+			console.log(`${fLine} * ${sLine} = ${Number(fLine) * Number(sLine)}`);
+		}
+	});
 });

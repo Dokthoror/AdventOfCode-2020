@@ -15,19 +15,19 @@ let column = 0;
 let lineNumber = 1;
 
 lines.forEach((line) => {
-    const squareData = line.split('');
+	const squareData = line.split('');
 
-    if (lineNumber != 1) {
-        column += toRight;
+	if (lineNumber != 1) {
+		column += toRight;
 
-        if (!squareData[column]) {
-            column -= numberOfColumns;
-        }
+		if (!squareData[column]) {
+			column -= numberOfColumns;
+		}
 
-        if (squareData[column] == '#') numberOfTrees++;
-    }
+		if (squareData[column] == '#') numberOfTrees++;
+	}
 
-    lineNumber++;
+	lineNumber++;
 });
 
 console.log(numberOfTrees);

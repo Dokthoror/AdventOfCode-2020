@@ -10,27 +10,27 @@ const toRight = [1, 3, 5, 7];
 
 
 toRight.forEach((right) => {
-    let numberOfTrees = 0;
-    let column = 0;
-    let lineNumber = 1;
+	let numberOfTrees = 0;
+	let column = 0;
+	let lineNumber = 1;
 
-    lines.forEach((line) => {
-        const squareData = line.split('');
+	lines.forEach((line) => {
+		const squareData = line.split('');
 
-        if (lineNumber != 1) {
-            column += right;
+		if (lineNumber != 1) {
+			column += right;
 
-            if (!squareData[column]) {
-                column -= numberOfColumns;
-            }
+			if (!squareData[column]) {
+				column -= numberOfColumns;
+			}
 
-            if (squareData[column] == '#') numberOfTrees++;
-        }
+			if (squareData[column] == '#') numberOfTrees++;
+		}
 
-        lineNumber++;
-    });
+		lineNumber++;
+	});
 
-    console.log(numberOfTrees);
+	console.log(numberOfTrees);
 });
 
 
@@ -39,19 +39,19 @@ let lineNumber = 1;
 let column = 0;
 
 lines.forEach((line) => {
-    const squareData = line.split('');
+	const squareData = line.split('');
 
-    if (lineNumber % 2 == 1 && lineNumber != 1) {
-        column += 1;
+	if (lineNumber % 2 == 1 && lineNumber != 1) {
+		column += 1;
 
-        if (!squareData[column]) {
-            column -= numberOfColumns;
-        }
+		if (!squareData[column]) {
+			column -= numberOfColumns;
+		}
 
-        if (squareData[column] == '#') numberOfTrees++;
-    }
+		if (squareData[column] == '#') numberOfTrees++;
+	}
 
-    lineNumber++;
+	lineNumber++;
 });
 
 // Need to multiply by hand the given values

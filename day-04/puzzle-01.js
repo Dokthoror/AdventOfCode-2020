@@ -14,15 +14,15 @@ let countField = 0;
 let goodPassports = 0;
 
 lines.forEach((line) => {
-    const dataType = line.split(':')[0];
-    if (line != '') {
-        REQUIRED_FIELDS.forEach((rField) => {
-            if (dataType == rField.split(':')[0]) countField++;
-        });
-    } else {
-        if (countField == REQUIRED_FIELDS.length) goodPassports++;
-        countField = 0;
-    }
+	const dataType = line.split(':')[0];
+	if (line != '') {
+		REQUIRED_FIELDS.forEach((rField) => {
+			if (dataType == rField.split(':')[0]) countField++;
+		});
+	} else {
+		if (countField == REQUIRED_FIELDS.length) goodPassports++;
+		countField = 0;
+	}
 });
 
 console.log(goodPassports);
