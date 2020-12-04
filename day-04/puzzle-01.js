@@ -1,8 +1,8 @@
-const exec = require('child_process').exec;
+const execFileSync = require('child_process').execFileSync;
 const fs = require('fs');
 
 
-exec('cat input-file.txt | tr " " "\n" > ./tmp-file.txt');
+execFileSync('./format-data.sh');
 
 const REQUIRED_FIELDS=['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'];
 
